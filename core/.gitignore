@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.env
+venv/
+ENV/
+env/
+.venv/
+
+# Databases
+*.db
+*.sqlite3
+
+# Migrations and alembic cache
+migrations/
+alembic/
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
