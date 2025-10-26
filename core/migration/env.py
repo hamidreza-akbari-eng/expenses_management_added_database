@@ -43,6 +43,7 @@ else:
 # target_metadata = mymodel.Base.metadata
 
 from expenses.models import *
+from users.models import *
 
 target_metadata = Base.metadata
 
@@ -68,9 +69,9 @@ def run_migrations_offline() -> None:
     context.configure(
         url=url,
         target_metadata=target_metadata,
+        render_as_batch=True,
         literal_binds=True,
         dialect_opts={"paramstyle": "named"},
-        render_as_batch=True,
     )
 
     with context.begin_transaction():

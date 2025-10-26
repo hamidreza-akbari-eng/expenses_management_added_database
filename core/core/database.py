@@ -3,6 +3,8 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 
 from core.config import settings
 
+DATABASE_URL = "sqlite:///./database.db"
+
 engine = create_engine(
     url=settings.SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
 )

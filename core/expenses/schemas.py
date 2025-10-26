@@ -12,6 +12,7 @@ class ExpenseCreateSchema(ExpenseBaseSchema):
 
 class ExpenseResponseSchema(ExpenseBaseSchema):
     id: int = Field(..., gt=0)
+    user_id: int
 
 
 class ExpenseUpdateSchema(ExpenseBaseSchema):
